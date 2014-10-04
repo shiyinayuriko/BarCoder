@@ -92,6 +92,7 @@ namespace BarCoder
 
             }
             reader.Close();
+            _dataTable.Entered = _dataTable.EnterInfo.Count;
             return _dataTable;
         }
         private void InitialWriter(string fileName)
